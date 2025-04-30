@@ -1,0 +1,28 @@
+# 실험 결과 및 로그 제외
+checkpoints/
+runs/
+
+# 데이터셋 제외
+data/
+
+# 파이썬 캐시 파일 제외
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+
+# Jupyter Notebook 체크포인트 제외
+.ipynb_checkpoints/
+
+# PyCharm 프로젝트 파일 제외
+.idea/
+
+# VS Code 설정 파일 제외
+.vscode/
+
+# 환경 설정 파일 제외
+.env
+
+# 가상 환경 제외
+venv/
