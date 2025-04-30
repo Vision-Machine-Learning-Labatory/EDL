@@ -1,0 +1,20 @@
+dataset:
+  name: MNIST
+  resize: [32, 32]
+  normalize: false
+  batch_size: 256
+
+model:
+  type: lenet
+  num_classes: 10
+
+train:
+  epochs: 10
+  lr: 0.001
+  optimizer: adam
+  checkpoint_path: "./checkpoints/"
+
+edl:
+  enabled: False
+  loss_type: nll
+  evidence_func: relu  # relu, softplus, exp
