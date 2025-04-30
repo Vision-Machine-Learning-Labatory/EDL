@@ -5,6 +5,13 @@ runs/
 # 데이터셋 제외
 data/
 
+# 이전 코드 제외
+old_code/
+Evidential_Defense/
+
+# 모델 체크포인트 제외
+checkpoints/
+
 # 파이썬 캐시 파일 제외
 __pycache__/
 *.py[cod]
