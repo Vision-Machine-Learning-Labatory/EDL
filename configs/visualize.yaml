@@ -1,0 +1,20 @@
+dataset:
+  name: MNIST
+  resize: [32, 32]
+  normalize: false
+  batch_size: 1
+
+model:
+  type: lenet    # or resnet_softmax
+  checkpoint_path: "./checkpoints/edl_MNIST_250430_15:36/model.pth"
+  num_classes: 10
+  evidence_func: relu
+
+visualization:
+  method: gradcam         # or saliency
+  target_type: belief     # evidence / belief / uncertainty / probability
+  random:
+    is_random: False
+    seed: 42
+    target_indices: 0 # indices of the classes to visualize
+  save_path: "./results"
