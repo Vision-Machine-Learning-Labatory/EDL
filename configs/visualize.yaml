@@ -4,15 +4,17 @@ dataset:
   normalize: false
   batch_size: 1
 
-model:
-  type: lenet    # or resnet_softmax
+model_config:
   checkpoint_path: "./checkpoints/edl_MNIST_250430_15:36/model.pth"
-  num_classes: 10
-  evidence_func: relu
+  model:
+    type: lenet
+    num_classes: 10
+  edl:
+    enabled: True
+    evidence_func: relu  # relu, softplus, exp
 
 visualization:
-  method: gradcam         # or saliency
-  target_type: belief     # evidence / belief / uncertainty / probability
+  method: saliency         # or saliency
   random:
     is_random: False
     seed: 42

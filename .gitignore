@@ -1,6 +1,7 @@
 # 실험 결과 및 로그 제외
 checkpoints/
 runs/
+results/
 
 # 데이터셋 제외
 data/
